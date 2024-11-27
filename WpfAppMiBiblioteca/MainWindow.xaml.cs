@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfAppMiBiblioteca.Views;
 
 namespace WpfAppMiBiblioteca
 {
@@ -19,6 +20,13 @@ namespace WpfAppMiBiblioteca
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void AbrirAutores_Click(object sender, RoutedEventArgs e)
+        {
+            // Crea una instancia de la ventana AutoresView y ábrela
+            var autoresView = new AutoresView();
+            autoresView.ShowDialog();
         }
     }
 }
